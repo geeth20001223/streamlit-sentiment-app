@@ -5,7 +5,7 @@ import joblib
 # Load model
 @st.cache_data
 def load_model():
-    return joblib.load("../ITBIN-2211-0252_Deployment with streamlit/model.joblib")
+    return joblib.load("model.joblib")
 
 model = load_model()
 
