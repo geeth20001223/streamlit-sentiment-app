@@ -30,6 +30,6 @@ if st.button("Predict"):
                                         "DiabetesPedigreeFunction", "Age"])
     prediction = model.predict(input_data)[0]
     if prediction == 1:
-        st.error("🔴 The patient is likely to have diabetes.")
+        st.error("The patient is likely to have diabetes.")
     else:
-        st.success("🟢 The patient is unlikely to have diabetes.")
+        st.success("The patient is unlikely to have diabetes.")
